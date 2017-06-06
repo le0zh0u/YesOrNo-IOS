@@ -715,6 +715,7 @@
 				9088787D1ED9D8F8001AA5CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
