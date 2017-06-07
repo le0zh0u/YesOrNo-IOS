@@ -51,14 +51,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func clickStartButton(){
-        let randomNum = drand48()
+        var randomBiggerCount = 0
+        var randomSmallerCount = 0
+        while randomBiggerCount + randomSmallerCount < 10 {
+            if arc4random() % 10 > 5{
+                randomBiggerCount = randomBiggerCount + 1
+            }else{
+                randomSmallerCount = randomSmallerCount + 1
+            }
+        }
         self.yesLabel?.backgroundColor = UIColor.lightGray
         self.noLabel?.backgroundColor = UIColor.lightGray
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            if randomNum>0.5{
-                self.yesLabel?.backgroundColor = UIColor.darkGray
-            }else{
+            if randomBiggerCount>randomSmallerCount{
                 self.noLabel?.backgroundColor = UIColor.darkGray
+            }else{
+                self.yesLabel?.backgroundColor = UIColor.darkGray
             }
             self.startButton?.setTitle(NSLocalizedString("StartButtonText", comment: ""), for: .normal)
             self.startButton?.isEnabled = true
