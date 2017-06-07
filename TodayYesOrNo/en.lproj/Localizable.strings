@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  YesOrNo
+
+  Created by zhouchunjie on 2017/6/7.
+  Copyright © 2017年 leozhou. All rights reserved.
+*/
+"YesLabel" = "Yes";
+"NoLabel" = "No";
+"StartButtonText" = "Start";
+"StartButtonTextRolling" = "Rolling";

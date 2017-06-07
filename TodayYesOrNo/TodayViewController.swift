@@ -22,21 +22,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         //sub view 1
         yesLabel = UILabel(frame: CGRect(x:0, y:0,width:fullScreenSize.width/3, height: 50))
         yesLabel?.backgroundColor = UIColor.lightGray
-        yesLabel?.text = "YES"
+        yesLabel?.text = NSLocalizedString("YesLabel", comment: "")
         yesLabel?.font = UIFont(name: "Helvetica-Light", size: 20)
         yesLabel?.textAlignment = NSTextAlignment.center
         self.view.addSubview(yesLabel!)
         
         startButton = UIButton(
             frame: CGRect(x: fullScreenSize.width/3, y: 0, width: fullScreenSize.width/3, height: 50))
-        startButton?.setTitle("Start", for: .normal)
+        startButton?.setTitle(NSLocalizedString("StartButtonText", comment: ""), for: .normal)
         startButton?.backgroundColor = UIColor.gray
         startButton?.addTarget(self, action: #selector(TodayViewController.clickStartButton), for: .touchUpInside)
         self.view.addSubview(startButton!)
         
         noLabel = UILabel(frame: CGRect(x:fullScreenSize.width*2/3, y:0,width:fullScreenSize.width/3, height: 50))
         noLabel?.backgroundColor = UIColor.lightGray
-        noLabel?.text = "NO"
+        noLabel?.text = NSLocalizedString("NoLabel", comment: "")
         noLabel?.font = UIFont(name: "Helvetica-Light", size: 20)
         noLabel?.textAlignment = NSTextAlignment.center
         self.view.addSubview(noLabel!)
@@ -60,11 +60,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }else{
                 self.noLabel?.backgroundColor = UIColor.darkGray
             }
-            self.startButton?.setTitle("Start", for: .normal)
+            self.startButton?.setTitle(NSLocalizedString("StartButtonText", comment: ""), for: .normal)
             self.startButton?.isEnabled = true
         }
         startButton?.isEnabled = false
-        startButton?.setTitle("Rolling", for: .disabled)
+        startButton?.setTitle(NSLocalizedString("StartButtonTextRolling", comment: ""), for: .disabled)
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {

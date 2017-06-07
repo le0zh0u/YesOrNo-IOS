@@ -6,3 +6,8 @@
   Copyright © 2017年 leozhou. All rights reserved.
 */
 "AppName" = "Yes Or No";
+
+"AboutApp" = "About App";
+"AboutAppDesc" = "Yes Or No is an app for someone who choose some thing difficultly. It is verrrrrry easy to use in today center.";
+"Donate" = "Donate";
+"Suggest" = "Suggest";

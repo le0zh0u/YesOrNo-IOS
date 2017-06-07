@@ -6,3 +6,9 @@
   Copyright © 2017年 leozhou. All rights reserved.
 */
 "AppName" = "听天";
+
+"AboutApp" = "关于我";
+"AboutAppDesc" = "Yes Or No 是专门为选择困难症准备的APP，可以在通知中心中添加插件，方便进行选择.";
+"Donate" = "捐助";
+"Suggest" = "建议";
+

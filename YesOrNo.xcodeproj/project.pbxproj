@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90693B4A1EE7C6EB005FCD42 /* AboutAppDescView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90693B491EE7C6EB005FCD42 /* AboutAppDescView.swift */; };
+		90693B4D1EE829CD005FCD42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90693B4F1EE829CD005FCD42 /* Localizable.strings */; };
 		908878131ED9BD03001AA5CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908878121ED9BD03001AA5CB /* AppDelegate.swift */; };
 		908878151ED9BD03001AA5CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908878141ED9BD03001AA5CB /* ViewController.swift */; };
 		908878181ED9BD03001AA5CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908878161ED9BD03001AA5CB /* Main.storyboard */; };
@@ -62,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		90693B491EE7C6EB005FCD42 /* AboutAppDescView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppDescView.swift; sourceTree = "<group>"; };
+		90693B511EE829D2005FCD42 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		90693B521EE829E2005FCD42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9088780F1ED9BD03001AA5CB /* YesOrNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesOrNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		908878121ED9BD03001AA5CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		908878141ED9BD03001AA5CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +195,7 @@
 			children = (
 				908878651ED9D4C1001AA5CB /* MainTableView.swift */,
 				908878671ED9D73E001AA5CB /* MainTableViewCell.swift */,
+				90693B491EE7C6EB005FCD42 /* AboutAppDescView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				908878721ED9D8F7001AA5CB /* TodayViewController.swift */,
 				908878741ED9D8F7001AA5CB /* MainInterface.storyboard */,
 				908878771ED9D8F8001AA5CB /* Info.plist */,
+				90693B4F1EE829CD005FCD42 /* Localizable.strings */,
 			);
 			path = TodayYesOrNo;
 			sourceTree = "<group>";
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				908878761ED9D8F8001AA5CB /* MainInterface.storyboard in Resources */,
+				90693B4D1EE829CD005FCD42 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +390,7 @@
 			files = (
 				908878661ED9D4C1001AA5CB /* MainTableView.swift in Sources */,
 				908878151ED9BD03001AA5CB /* ViewController.swift in Sources */,
+				90693B4A1EE7C6EB005FCD42 /* AboutAppDescView.swift in Sources */,
 				908878681ED9D73E001AA5CB /* MainTableViewCell.swift in Sources */,
 				908878131ED9BD03001AA5CB /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +441,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		90693B4F1EE829CD005FCD42 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90693B511EE829D2005FCD42 /* zh-Hans */,
+				90693B521EE829E2005FCD42 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		908878161ED9BD03001AA5CB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
