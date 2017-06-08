@@ -54,7 +54,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         var randomBiggerCount = 0
         var randomSmallerCount = 0
         while randomBiggerCount + randomSmallerCount < 10 {
-            if arc4random() % 10 > 5{
+            srand48(Int(time(nil)))
+            var randomValue = drand48()
+            if randomValue == 0.5{
+                continue
+            }else if  randomValue > 0.5{
                 randomBiggerCount = randomBiggerCount + 1
             }else{
                 randomSmallerCount = randomSmallerCount + 1
